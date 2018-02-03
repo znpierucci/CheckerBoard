@@ -140,7 +140,12 @@ public class CheckerBoard {
     */
     
     public AnchorPane getBoard() {
-        return anchorPane;
+        if (this.anchorPane != null) {
+            return anchorPane;
+        } else {
+            return null;
+        }
+
     }
     
     public void setAnchorPane(AnchorPane anchorPane){
