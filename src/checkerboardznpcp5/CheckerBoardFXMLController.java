@@ -43,56 +43,56 @@ public class CheckerBoardFXMLController implements Initializable, Startable {
     @FXML
     private void handleSize1(ActionEvent event) {
 //        checkerBoard.clear();
-//        numRows = 16;
-//        numColumns = 16;
+        numRows = 16;
+        numColumns = 16;
 //        
 //        boardRefresh();
 //        refresh();
 
-        checkerBoard.setNumRows(16);
-        checkerBoard.setNumColumns(16);
+        checkerBoard.setNumRows(numRows);
+        checkerBoard.setNumColumns(numColumns);
         checkerBoard.build();
     }
     
     @FXML
     private void handleSize2(ActionEvent event) {
 //        checkerBoard.clear();
-//        numRows = 10;
-//        numColumns = 10;
+        numRows = 10;
+        numColumns = 10;
 //        
 //        boardRefresh();
 //        refresh();
         
-        checkerBoard.setNumRows(10);
-        checkerBoard.setNumColumns(10);
+        checkerBoard.setNumRows(numRows);
+        checkerBoard.setNumColumns(numColumns);
         checkerBoard.build();
     }
     
     @FXML
     private void handleSize3(ActionEvent event) {
 //        checkerBoard.clear();
-//        numRows = 8;
-//        numColumns = 8;
+        numRows = 8;
+        numColumns = 8;
 //        
 //        boardRefresh();
 //        refresh();
 
-        checkerBoard.setNumRows(8);
-        checkerBoard.setNumColumns(8);
+        checkerBoard.setNumRows(numRows);
+        checkerBoard.setNumColumns(numColumns);
         checkerBoard.build();
     }
     
     @FXML
     private void handleSize4(ActionEvent event) {
         //checkerBoard.clear();
-//        numRows = 3;
-//        numColumns = 3;
+        numRows = 3;
+        numColumns = 3;
 //        
 //        boardRefresh();
 //        refresh();
 
-        checkerBoard.setNumRows(3);
-        checkerBoard.setNumColumns(3);
+        checkerBoard.setNumRows(numRows);
+        checkerBoard.setNumColumns(numColumns);
         checkerBoard.build();
     }
     
