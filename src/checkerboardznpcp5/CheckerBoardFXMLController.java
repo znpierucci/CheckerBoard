@@ -12,7 +12,6 @@ import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -43,64 +42,88 @@ public class CheckerBoardFXMLController implements Initializable, Startable {
     
     @FXML
     private void handleSize1(ActionEvent event) {
-        checkerBoard.clear();
-        numRows = 16;
-        numColumns = 16;
-        
-        boardRefresh();
-        refresh();
+//        checkerBoard.clear();
+//        numRows = 16;
+//        numColumns = 16;
+//        
+//        boardRefresh();
+//        refresh();
+
+        checkerBoard.setNumRows(16);
+        checkerBoard.setNumColumns(16);
+        checkerBoard.build();
     }
     
     @FXML
     private void handleSize2(ActionEvent event) {
-        checkerBoard.clear();
-        numRows = 10;
-        numColumns = 10;
+//        checkerBoard.clear();
+//        numRows = 10;
+//        numColumns = 10;
+//        
+//        boardRefresh();
+//        refresh();
         
-        boardRefresh();
-        refresh();
+        checkerBoard.setNumRows(10);
+        checkerBoard.setNumColumns(10);
+        checkerBoard.build();
     }
     
     @FXML
     private void handleSize3(ActionEvent event) {
-        checkerBoard.clear();
-        numRows = 8;
-        numColumns = 8;
-        
-        boardRefresh();
-        refresh();
+//        checkerBoard.clear();
+//        numRows = 8;
+//        numColumns = 8;
+//        
+//        boardRefresh();
+//        refresh();
+
+        checkerBoard.setNumRows(8);
+        checkerBoard.setNumColumns(8);
+        checkerBoard.build();
     }
     
     @FXML
     private void handleSize4(ActionEvent event) {
-        checkerBoard.clear();
-        numRows = 3;
-        numColumns = 3;
-        
-        boardRefresh();
-        refresh();
+        //checkerBoard.clear();
+//        numRows = 3;
+//        numColumns = 3;
+//        
+//        boardRefresh();
+//        refresh();
+
+        checkerBoard.setNumRows(3);
+        checkerBoard.setNumColumns(3);
+        checkerBoard.build();
     }
     
     @FXML
     private void handleColor1(ActionEvent event) {
-        checkerBoard.clear();
+        //checkerBoard.clear();
         light = Color.RED;
         dark = Color.BLACK;
-        
+//        
+//
+//        boardRefresh();
+//        refresh();
 
-        boardRefresh();
-        refresh();
+
+        checkerBoard.setLightColor(light);
+        checkerBoard.setDarkColor(dark);
+        checkerBoard.build();
     }
     
     @FXML
     private void handleColor2(ActionEvent event) {
-        checkerBoard.clear();
+        //checkerBoard.clear();
         light = Color.SKYBLUE;
         dark = Color.DARKBLUE;
-        
-        
-        boardRefresh();
-        refresh();
+//        
+//        
+//        boardRefresh();
+//        refresh();
+        checkerBoard.setLightColor(light);
+        checkerBoard.setDarkColor(dark);
+        checkerBoard.build();
     }
     
     @Override
