@@ -74,7 +74,6 @@ If (/* if no more moves can be made */) {
 
 
 Implement the algorithms (outside of the model) for the computer (AI) to determine moves
-
 If (/* move is legal */) {
 	If (/* opponent can be jumped over */) {
 		//jump over opponent
@@ -87,4 +86,4 @@ If (/* move is legal */) {
 }
 
 Implement a UI representation of the game and game play
-
+The UI will be an 8x8 Checkerboard with squares numbered from 1 - 64
